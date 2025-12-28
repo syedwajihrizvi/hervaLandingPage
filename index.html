@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Herva — Hire Faster. Apply Smarter.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>Herva</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#cta">Get Started</a>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#cta">Get Started</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h2>Hire faster.<br>Apply smarter.</h2>
+      <p>Herva is only about one thing: <span style="font-weight: bold;">Hiring</span>. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn’t help you hire or get hired, it doesn’t belong here.</p>
+      <div class="hero-actions">
+        <a class="btn primary cta-btn">Join the Waitlist</a>
+        <a class="btn secondary">For Businesses</a>
+      </div>
+    </div>
+    <div class="phone">
+      <div class="screen">Your App UI</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-inner">
+    <div class="section-title">
+      <h3>Built for modern hiring</h3>
+      <p>Everything you need, nothing you don't.</p>
+      <div class="feature-toggle">
+      <button class="pill active" data-target="people">For Job Seekers</button>
+      <button class="pill" data-target="business">For Businesses</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="features-wrapper">
+<div class="features features-user active reveal-group" id="features-user">
+
+  <div class="feature-card reveal">
+    <h4>Video Intros</h4>
+    <div class="feature-icon">
+      <i class="bi bi-camera-video"></i>
+    </div>
+    <p>Introduce yourself in seconds. Show who you are beyond a résumé—before the first interview.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Quick Apply</h4>
+    <div class="feature-icon">
+      <i class="bi bi-lightning"></i>
+    </div>
+    <p>Apply in one tap. No long forms, no repeated uploads, no wasted time.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Direct Messaging</h4>
+    <div class="feature-icon">
+      <i class="bi bi-chat-dots"></i>
+    </div>
+    <p>Chat directly with recruiters and hiring managers. No middlemen. No ghosting.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Smart Job Matching</h4>
+    <div class="feature-icon">
+      <i class="bi bi-star"></i>
+    </div>
+    <p>See roles that actually fit your skills, experience, and goals—not spam listings.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Resume & Document</h4>
+    <div class="feature-icon">
+      <i class="bi bi-file-earmark-arrow-up"></i>
+    </div>
+    <p>Upload resumes, portfolios, and certifications once. Reuse them everywhere.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Interview Prep</h4>
+    <div class="feature-icon">
+      <i class="bi bi-card-checklist"></i>
+    </div>
+    <p>AI-powered prep tailored to the role, company, and interview type.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Interview Scheduling</h4>
+    <div class="feature-icon">
+      <i class="bi bi-calendar-check"></i>
+    </div>
+    <p>Schedule interviews instantly without back-and-forth emails.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Application Status Tracking</h4>
+    <div class="feature-icon">
+      <i class="bi bi-list-check"></i>
+    </div>
+    <p>Always know where you stand—applied, viewed, interviewing, or offered.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Real-Time Notifications</h4>
+    <div class="feature-icon">
+      <i class="bi bi-bell"></i>
+    </div>
+    <p>Instant alerts for messages, interview invites, and decisions.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Local & Remote Roles</h4>
+    <div class="feature-icon">
+      <i class="bi bi-geo-alt"></i>
+    </div>
+    <p>Find jobs near you or remote opportunities that match your location.</p>
+  </div>
+
+</div>
+
+
+<div class="features features-business reveal-group" id="features-business">
+
+  <div class="feature-card reveal">
+    <h4>Video Candidate Intros</h4>
+    <div class="feature-icon">
+      <i class="bi bi-camera-video"></i>
+    </div>
+    <p>See candidates before the interview. Evaluate communication and presence instantly.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Direct Candidate Messaging</h4>
+    <div class="feature-icon">
+      <i class="bi bi-chat-square-dots"></i>
+    </div>
+    <p>Message candidates directly. Move faster without recruiters in the middle.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Smart Candidate Matching</h4>
+    <div class="feature-icon">
+      <i class="bi bi-diagram-3"></i>
+    </div>
+    <p>Get matched with qualified candidates based on skills, role fit, and intent.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Fast Job Posting</h4>
+    <div class="feature-icon">
+      <i class="bi bi-plus-square"></i>
+    </div>
+    <p>Create and publish job postings in minutes, not hours.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Applicant Pipeline</h4>
+    <div class="feature-icon">
+      <i class="bi bi-kanban"></i>
+    </div>
+    <p>Track candidates through every stage—from application to offer.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Built-In Interview Scheduling</h4>
+    <div class="feature-icon">
+      <i class="bi bi-calendar2-check"></i>
+    </div>
+    <p>Schedule interviews without email threads or external tools.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Live Video Interviews</h4>
+    <div class="feature-icon">
+      <i class="bi bi-camera-reels"></i>
+    </div>
+    <p>Interview candidates directly in Herva. No Zoom links required.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Team Collaboration</h4>
+    <div class="feature-icon">
+      <i class="bi bi-people"></i>
+    </div>
+    <p>Invite recruiters and hiring managers. Share feedback and decisions in one place.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Real-Time Notifications</h4>
+    <div class="feature-icon">
+      <i class="bi bi-bell-fill"></i>
+    </div>
+    <p>Get notified instantly when candidates apply, respond, or accept interviews.</p>
+  </div>
+
+  <div class="feature-card reveal">
+    <h4>Faster Time-to-Hire</h4>
+    <div class="feature-icon">
+      <i class="bi bi-speedometer2"></i>
+    </div>
+    <p>Reduce hiring cycles by cutting noise, steps, and unnecessary tools.</p>
+  </div>
+
+</div>
+
+  </div>
+</section>
+</section>
+<section id="how">
+  <div class="section-inner">
+    <div class="section-title">
+      <h3>How it works</h3>
+      <p>Built for both hiring teams and job seekers.</p>
+    </div>
+
+    <div class="how-toggle">
+      <button class="pill active" data-target="people">For Job Seekers</button>
+      <button class="pill" data-target="business">For Businesses</button>
+    </div>
+
+    <div class="how-content">
+
+      <div class="how-steps active reveal-group" id="people">
+        <div class="how-step reveal">
+          <span class="step-number">1</span>
+          <h4>Create your profile</h4>
+          <p>Upload a resume and short video introduction.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">2</span>
+          <h4>Extract details</h4>
+          <p>We automatically extract details from your resume such as skills, experience, education, projects, and more.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">3</span>
+          <h4>Upload additional documents</h4>
+          <p>Add any documents you want employers to see such as certificates, transcripts, and more.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">4</span>
+          <h4>Apply to Jobs</h4>
+          <p>Submit your applications with ease via quick apply or detailed submissions with cover letters.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">5</span>
+          <h4>Get Interviewed</h4>
+          <p>If companies are interested, you'll be invited to interview directly through the platform.</p>
+        </div>
+  
+        <div class="how-step reveal">
+          <span class="step-number">6</span>
+          <h4>Interview Preparation</h4>
+          <p>Utilize our state of the art tools and resources to prepare for your interviews and increase your chances of success.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">7</span>
+          <h4>Land Your Dream Job</h4>
+          <p>Find your ideal position and start your new career journey with confidence.</p>
+        </div>
+      </div>
+
+      <!-- BUSINESS -->
+      <div class="how-steps reveal-group" id="business">
+        <div class="how-step reveal">
+          <span class="step-number">1</span>
+          <h4>Post a role</h4>
+          <p>Create a job listing in minutes — no fluff.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">2</span>
+          <h4>Review applicants</h4>
+          <p>Easily review applicants and their profiles to find the best fit for your team.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">3</span>
+          <h4>Invite your team</h4>
+          <p>Invite additional team members to join Herva as admins, recruiters, or collaborators to streamline your hiring process.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">4</span>
+          <h4>Review applicants</h4>
+          <p>Seamlessly review applicants and their profiles to find the best fit for your team.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">5</span>
+          <h4>Reach out to candidates</h4>
+          <p>Contact potential hires and set up interviews directly through the platform.</p>
+        </div>
+
+        <div class="how-step reveal">
+          <span class="step-number">6</span>
+          <h4>Hire the right person</h4>
+          <p>Manage the hiring process efficiently and onboard your new team member with ease.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="cta" class="cta">
+  <div class="cta-inner">
+    <h3>The future of hiring starts here</h3>
+    <p>Join early and help shape the platform.</p>
+    <a class="btn primary cta-btn">Join the Waitlist</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2025 Herva</span>
+    <div class="footer-links">
+      <a>Privacy</a>
+      <a>Terms</a>
+      <a>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sign-up-overlay" id="businessSignup">
+  <div class="signup-modal">
+    <button class="close-btn" id="closeModalBtn">✕</button>
+
+    <h3>Join as a Business Today</h3>
+    <p>Start posting jobs and connect with top talent in minutes.</p>
+
+    <input
+      type="text"
+      placeholder="Company Name"
+      class="signup-input"
+    />
+
+    <input
+      type="email"
+      placeholder="Enter your work email"
+      class="signup-input"
+    />
+
+    <button class="btn primary signup-submit">
+      Get Early Access
+    </button>
+
+    <span class="signup-note">
+      No spam. We’ll notify you when we launch.
+    </span>
+  </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
