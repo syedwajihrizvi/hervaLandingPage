@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Herva — Hire Faster. Apply Smarter.</title>
+<title>Jobee — Hire Faster. Apply Smarter.</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,7 @@
 
 <header>
   <div class="header-inner">
-    <h1>Herva</h1>
+    <h1>Jobee</h1>
     <nav>
       <a href="#features">Features</a>
       <a href="#how">How It Works</a>
@@ -29,11 +29,12 @@
   </div>
 </header>
 
+<div id="toast-container"></div>
 <section class="hero">
   <div class="hero-inner">
     <div>
       <h2>Hire faster.<br>Apply smarter.</h2>
-      <p>Herva is only about one thing: <span style="font-weight: bold;">Hiring</span>. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn’t help you hire or get hired, it doesn’t belong here.</p>
+      <p>Jobee is only about one thing: <span style="font-weight: bold;">Hiring</span>. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn’t help you hire or get hired, it doesn’t belong here.</p>
       <div class="hero-actions">
         <a class="btn primary cta-btn">Join the Waitlist</a>
         <a class="btn secondary">For Businesses</a>
@@ -198,7 +199,7 @@
     <div class="feature-icon">
       <i class="bi bi-camera-reels"></i>
     </div>
-    <p>Interview candidates directly in Herva. No Zoom links required.</p>
+    <p>Interview candidates directly in Jobee. No Zoom links required.</p>
   </div>
 
   <div class="feature-card reveal">
@@ -305,7 +306,7 @@
         <div class="how-step reveal">
           <span class="step-number">3</span>
           <h4>Invite your team</h4>
-          <p>Invite additional team members to join Herva as admins, recruiters, or collaborators to streamline your hiring process.</p>
+          <p>Invite additional team members to join Jobee as admins, recruiters, or collaborators to streamline your hiring process.</p>
         </div>
 
         <div class="how-step reveal">
@@ -343,7 +344,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2025 Herva</span>
+    <span>© 2025 Jobee</span>
     <div class="footer-links">
       <a>Privacy</a>
       <a>Terms</a>
@@ -353,27 +354,29 @@
 </footer>
 
 <div class="sign-up-overlay" id="businessSignup">
-  <div class="signup-modal">
+  <div class="signup-modal" id="signupForm">
     <button class="close-btn" id="closeModalBtn">✕</button>
 
     <h3>Join as a Business Today</h3>
     <p>Start posting jobs and connect with top talent in minutes.</p>
 
-    <input
-      type="text"
-      placeholder="Company Name"
-      class="signup-input"
-    />
-
-    <input
-      type="email"
-      placeholder="Enter your work email"
-      class="signup-input"
-    />
-
-    <button class="btn primary signup-submit">
-      Get Early Access
-    </button>
+    <form>
+      <input
+        type="text"
+        placeholder="Company Name"
+        class="signup-input"
+        name="company-name"
+      />
+      <input
+        type="email"
+        placeholder="Enter your work email"
+        class="signup-input"
+        name="email"
+      />
+      <button class="btn primary signup-submit" id="submit">
+        Get Early Access
+      </button>
+    </form>
 
     <span class="signup-note">
       No spam. We’ll notify you when we launch.
