@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jobee — Hire Faster. Apply Smarter.</title>
+<title>Hiress — Hire Faster. Apply Smarter.</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,7 @@
 
 <header>
   <div class="header-inner">
-    <h1>Jobee</h1>
+    <img src="/assets/imgs/hiress-lettering-logo.png" alt="Hiress Logo" class="logo" style="height: 40px;" />
     <nav>
       <a href="#features">Features</a>
       <a href="#how">How It Works</a>
@@ -34,14 +34,52 @@
   <div class="hero-inner">
     <div>
       <h2>Hire faster.<br>Apply smarter.</h2>
-      <p>Jobee is only about one thing: <span style="font-weight: bold;">Hiring</span>. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn’t help you hire or get hired, it doesn’t belong here.</p>
-      <div class="hero-actions">
-        <a class="btn primary cta-btn">Join the Waitlist</a>
-        <a class="btn secondary">For Businesses</a>
+      <p>Hiress is only about one thing: <span style="font-weight: bold;">Hiring</span>. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn't help you hire or get hired, it doesn't belong here.</p>
+          <div class="hero-actions" id="hero-action-cta">
+        <a class="btn primary cta-btn">Join as a Business</a>
+      </div>
+      <div class="hero-toggle" style="margin-top: 2rem; display: flex; gap: 1rem">
+        <button class="pill active" data-target="people">For Job Seekers</button>
+        <button class="pill" data-target="business">For Businesses</button>
       </div>
     </div>
-    <div class="phone">
-      <div class="screen">Your App UI</div>
+    <div class="phone-stack active" id="phone-stack-user">
+      <div class="phone phone-small left">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-2.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
+
+      <div class="phone phone-large center">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-1.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
+
+      <div class="phone phone-small right">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-3.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
+    </div>
+    <div class="phone-stack" id="phone-stack-business">
+      <div class="phone phone-small left">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-4.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
+
+      <div class="phone phone-large center">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-5.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
+
+      <div class="phone phone-small right">
+        <div class="screen">
+          <img src="/assets/imgs/app-img-6.png" alt="App Screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -66,7 +104,7 @@
     <div class="feature-icon">
       <i class="bi bi-camera-video"></i>
     </div>
-    <p>Introduce yourself in seconds. Show who you are beyond a résumé—before the first interview.</p>
+    <p>Introduce yourself in seconds. Show who you are beyond a resume—before the first interview.</p>
   </div>
 
   <div class="feature-card reveal">
@@ -94,7 +132,7 @@
   </div>
 
   <div class="feature-card reveal">
-    <h4>Resume & Document</h4>
+    <h4>Resume & Documents</h4>
     <div class="feature-icon">
       <i class="bi bi-file-earmark-arrow-up"></i>
     </div>
@@ -145,7 +183,6 @@
 
 
 <div class="features features-business reveal-group" id="features-business">
-
   <div class="feature-card reveal">
     <h4>Video Candidate Intros</h4>
     <div class="feature-icon">
@@ -199,7 +236,7 @@
     <div class="feature-icon">
       <i class="bi bi-camera-reels"></i>
     </div>
-    <p>Interview candidates directly in Jobee. No Zoom links required.</p>
+    <p>Interview candidates directly in Hiress. No Zoom links required.</p>
   </div>
 
   <div class="feature-card reveal">
@@ -230,7 +267,7 @@
 
   </div>
 </section>
-</section>
+
 <section id="how">
   <div class="section-inner">
     <div class="section-title">
@@ -266,25 +303,25 @@
 
         <div class="how-step reveal">
           <span class="step-number">4</span>
-          <h4>Apply to Jobs</h4>
+          <h4>Apply to jobs</h4>
           <p>Submit your applications with ease via quick apply or detailed submissions with cover letters.</p>
         </div>
 
         <div class="how-step reveal">
           <span class="step-number">5</span>
-          <h4>Get Interviewed</h4>
+          <h4>Get interviewed</h4>
           <p>If companies are interested, you'll be invited to interview directly through the platform.</p>
         </div>
   
         <div class="how-step reveal">
           <span class="step-number">6</span>
-          <h4>Interview Preparation</h4>
-          <p>Utilize our state of the art tools and resources to prepare for your interviews and increase your chances of success.</p>
+          <h4>Interview preparation</h4>
+          <p>Utilize our state-of-the-art tools and resources to prepare for your interviews and increase your chances of success.</p>
         </div>
 
         <div class="how-step reveal">
           <span class="step-number">7</span>
-          <h4>Land Your Dream Job</h4>
+          <h4>Land your dream job</h4>
           <p>Find your ideal position and start your new career journey with confidence.</p>
         </div>
       </div>
@@ -306,26 +343,21 @@
         <div class="how-step reveal">
           <span class="step-number">3</span>
           <h4>Invite your team</h4>
-          <p>Invite additional team members to join Jobee as admins, recruiters, or collaborators to streamline your hiring process.</p>
+          <p>Invite additional team members to join Hiress as admins, recruiters, or collaborators to streamline your hiring process.</p>
         </div>
 
         <div class="how-step reveal">
           <span class="step-number">4</span>
-          <h4>Review applicants</h4>
-          <p>Seamlessly review applicants and their profiles to find the best fit for your team.</p>
-        </div>
-
-        <div class="how-step reveal">
-          <span class="step-number">5</span>
           <h4>Reach out to candidates</h4>
           <p>Contact potential hires and set up interviews directly through the platform.</p>
         </div>
 
         <div class="how-step reveal">
-          <span class="step-number">6</span>
+          <span class="step-number">5</span>
           <h4>Hire the right person</h4>
-          <p>Manage the hiring process efficiently and onboard your new team member with ease.</p>
+          <p>Manage the hiring process efficiently, schedule next rounds, communicate with candidates and send unofficial job offers directly through the app</p>
         </div>
+
       </div>
 
     </div>
@@ -344,7 +376,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2025 Jobee</span>
+    <span>© 2025 Hiress</span>
     <div class="footer-links">
       <a>Privacy</a>
       <a>Terms</a>
@@ -379,7 +411,7 @@
     </form>
 
     <span class="signup-note">
-      No spam. We’ll notify you when we launch.
+      No spam. We'll notify you when we launch.
     </span>
   </div>
 </div>

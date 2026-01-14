@@ -21,6 +21,25 @@ pills.forEach(pill => {
     document.getElementById(pill.dataset.target).classList.add('active');
   });
 });
+
+/* ================= PHONE TOGGLE ================= */
+const phonePills = document.querySelectorAll('.hero-toggle .pill');
+const phoneStackUser = document.getElementById('phone-stack-user');
+const phoneStackBusiness = document.getElementById('phone-stack-business');
+
+phonePills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    phonePills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    if (pill.dataset.target === 'people') {
+      phoneStackUser.style.display = 'flex';
+      phoneStackBusiness.style.display = 'none';
+    } else {
+      phoneStackUser.style.display = 'none';
+      phoneStackBusiness.style.display = 'flex';
+    }   
+});
+});
 /* ================= FEATURE TOGGLE ================= */
 const featurePills = document.querySelectorAll('.feature-toggle .pill');
 const featureUser = document.getElementById('features-user');
@@ -30,7 +49,6 @@ featurePills.forEach(pill => {
   pill.addEventListener('click', () => {
     featurePills.forEach(p => p.classList.remove('active'));
     pill.classList.add('active');
-    console.log(pill.dataset.target);
     if (pill.dataset.target === 'people') {
       featureUser.style.display = 'flex';
       featureBusiness.style.display = 'none';
