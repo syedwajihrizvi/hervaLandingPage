@@ -272,7 +272,6 @@ section {
 
 .features-wrapper {
   position: relative;
-  overflow-y: hidden ;
 }
 
 .features-wrapper::before,
@@ -308,7 +307,8 @@ section {
 .features {
   gap: 16px;
   overflow-x: auto;
-  padding: 0 24px 16px; /* ← ADD THIS */
+  padding: 0 24px 16px;
+  overflow-y: hidden;
 }
 
 .features-user {
@@ -534,7 +534,7 @@ footer {
   margin: auto;
   padding: 32px 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: var(--slate-500);
 }
