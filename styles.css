@@ -873,6 +873,15 @@ footer {
   padding: 14px;
   border-radius: 14px;
   font-size: 16px;
+  cursor: pointer;
+  background-color: #10b981;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.signup-submit:hover {
+  background-color: #059669;
 }
 
 .signup-note {
