@@ -145,3 +145,23 @@ businessForm.addEventListener('submit', async (event) => {
     businessForm.reset();
     document.getElementById('businessSignup').style.display = 'none';
 })
+
+/* ================= FEATURE SCROLL ================= */
+const featureContainer = document.querySelector('.features');
+const leftBtn = document.querySelector('.feature-btns .bi-arrow-left');
+const rightBtn = document.querySelector('.feature-btns .bi-arrow-right');
+
+leftBtn.addEventListener('click', () => {
+  featureContainer.scrollBy({
+    left: -300,
+    behavior: 'smooth'
+  });
+});
+
+rightBtn.addEventListener('click', () => {
+  console.log('Right button clicked');
+  featureContainer.scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+});

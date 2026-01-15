@@ -358,6 +358,7 @@ section {
   overflow-x: auto;
   padding: 0 24px 16px;
   overflow-y: hidden;
+  
 }
 
 .features-user {
@@ -380,6 +381,33 @@ section {
   display: none;                /* Chrome/Safari */
 }
 
+.feature-btns {
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feature-btns i {
+  color: white;
+  cursor: pointer;
+  background-color: #10b981;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: color 0.2s ease, transform 0.3s ease;
+}
+
+.feature-btns i:hover {
+  color: var(--emerald-400);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .feature-btns {
+    display: flex;
+  }
+}
+
 .feature-card {
   flex: 0 0 320px;
   height: 380px;
@@ -387,7 +415,7 @@ section {
   border-radius: 26px;
   padding: 32px;
   border: 1px solid rgba(16,185,129,0.2);
-  box-shadow: 0 10px 24px -6px rgba(15,23,42,0.18);
+  box-shadow: 0 5px 12px -3px rgba(15,23,42,0.18);
   scroll-snap-align: start;
   transition: transform .2s ease, box-shadow .2s ease;
   cursor: pointer;
