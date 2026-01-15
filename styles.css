@@ -645,6 +645,15 @@ footer {
   font-size: 14px;
 }
 
+.footer__text {
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #10b981;
+    text-align: center;
+}
+
 .footer-links a:hover {
   color: var(--emerald-600);
 }
