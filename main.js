@@ -233,7 +233,7 @@ if (resetPasswordBtn) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ token, newPassword }),
+        body: JSON.stringify({ token, password }),
       })
       if (res.ok) {
         showToast('Password reset successfully!', 'success');
