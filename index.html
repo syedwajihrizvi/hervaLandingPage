@@ -407,7 +407,6 @@
 
 <div class="sign-up-overlay" id="businessSignup">
   <div class="signup-modal" id="signupForm">
-    <button class="close-btn" id="closeModalBtn">✕</button>
 
     <h3>Join as a Business Today</h3>
     <p>Start posting jobs and connect with top talent in minutes.</p>
@@ -425,9 +424,15 @@
         class="signup-input"
         name="email"
       />
+      <div style="display:flex;flex-direction: column;gap:1rem">
       <button class="btn signup-submit" id="submit">
         Get Early Access
       </button>
+      <button class="btn btn-close" id="closeModalBtn">
+        Cancel
+      </button>
+      </div>
+
     </form>
 
     <span class="signup-note">

@@ -77,7 +77,8 @@ ctas.forEach(cta => (
 
 const closeModalBtn = document.getElementById('closeModalBtn');
 if (closeModalBtn) {
-closeModalBtn.addEventListener('click', () => {
+closeModalBtn.addEventListener('click', (event) => {
+    event.preventDefault();
     document.getElementById('businessSignup').style.display = 'none'
 })
 }
