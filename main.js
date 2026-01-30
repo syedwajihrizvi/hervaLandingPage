@@ -187,10 +187,9 @@ const validatePassword = (password) => {
   return hasUpperCase && hasLowerCase && hasNumbers && hasSpecialChars;
 }
 
-const urlParams = new URLSearchParams(window.location.search);
+let urlParams = new URLSearchParams(window.location.search);
 const token = urlParams.get('token');
 const userType = urlParams.get('type');
-console.log('Password reset token:', token);
 
 const resetPasswordBtn = document.getElementById('resetPasswordBtn');
 const newPasswordInput = document.getElementById('newPassword');
@@ -248,3 +247,49 @@ if (resetPasswordBtn) {
     }
   })
 }
+
+/* ================= ACCOUNT VERIFICATION QUERY PARAMS ================= */
+urlParams = new URLSearchParams(window.location.search);
+const code = urlParams.get('code');
+const email = urlParams.get('email');
+
+// When the document is fully loaded, make call to the API to verify account
+document.addEventListener('DOMContentLoaded', async () => {
+    console.log("Calling")
+    const loadingCard = document.querySelector('.verification-loading')
+    const successCard = document.querySelector('.verified-card')
+    const failureCard = document.querySelector('.verification-failed-card')
+    
+    if (!code || !email) {
+        loadingCard.style.display = 'none';
+        failureCard.style.display = 'flex';
+        return;
+    } 
+    if (code && email) {
+        loadingCard.style.display = 'flex';
+        try {
+            // Simulate API call of 3 seconds
+            // TODO: Replace with actual API call
+            const res = await fetch('https://api.hirvo.com/api/accounts/verify-account', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ code, email }),
+            })
+            if (res.status === 200) {
+                loadingCard.style.display = 'none';
+                successCard.style.display = 'flex';
+            } else {
+                loadingCard.style.display = 'none';
+                failureCard.style.display = 'flex';
+            }
+        } catch (error) {
+          console.log(error)
+            loadingCard.style.display = 'none';
+            failureCard.style.display = 'flex';
+        } finally {
+            loadingCard.style.display = 'none';
+        }
+    }
+})
